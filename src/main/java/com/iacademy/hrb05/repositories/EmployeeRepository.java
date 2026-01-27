@@ -1,0 +1,14 @@
+package com.iacademy.hrb05.repositories;
+
+import com.iacademy.hrb05.documents.Employee;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface EmployeeRepository extends MongoRepository<Employee,String>  {
+
+
+}
+
+
