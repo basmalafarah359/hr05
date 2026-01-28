@@ -13,12 +13,18 @@ import java.util.Date;
 @AllArgsConstructor
 @Document
 public class DayOff {
+
+
     @Id
     private String id;
     private String reason;
     private int date;
 
 
+   private String employeeid;
 
+    public String getEmployeeId() {
+        return null;
+    }
 }
 
