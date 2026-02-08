@@ -20,10 +20,12 @@ public class DayOffService {
                 dayOff.getDate())) {
             throw new RuntimeException("Employee already has a day off on this date");
         }
+return repository.save(dayOff);
 
 
 
-        return repository.save(dayOff);
+
+
 
     }
 
@@ -53,6 +55,7 @@ public class DayOffService {
     public void delete(String id) {
         repository.deleteById(id);
     }
+
 
 }
 
